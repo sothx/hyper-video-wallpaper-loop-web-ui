@@ -57,23 +57,6 @@ else
   ui_print "- Magisk 版本: $MAGISK_VER_CODE"
 fi
 
-if [[ "$API" -ge 35 ]]; then
-  ui_print "*********************************************"
-  ui_print "- 是否启用dm设备映射器？"
-  ui_print "  音量+ ：是"
-  ui_print "  音量- ：否"
-  ui_print "*********************************************"
-  key_check
-  if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-    ui_print "- 已开启dm设备映射器"
-    ui_print "- [重要提醒]需要开启内存扩展才会生效"
-    add_props "# 开启dm设备映射器"
-    add_props "persist.miui.extm.dm_opt.enable=true"
-  else
-    ui_print "- 你选择不开启dm设备映射器"
-  fi
-fi
-
 # KSU Web UI
 is_need_install_ksu_web_ui=1
 HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
