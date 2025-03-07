@@ -1,4 +1,4 @@
-# Hyper OS ZRAM Writeback For Web UI
+# Hyper OS 动态壁纸管理 For Web UI
 
 ## 模块简介
 
@@ -22,4 +22,4 @@
 
 ## 其他
 
-有关模块库的更多信息请查看Github (https://github.com/sothx/hyper-zram-writeback-web-ui)
+有关模块库的更多信息请查看Github (https://github.com/sothx/hyper-video-wallpaper-loop-web-ui)
