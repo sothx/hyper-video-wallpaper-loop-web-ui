@@ -140,6 +140,7 @@
       import { exec } from "./assets/kernelsu/index.js";
       import resizeObserverPolyfill from "./assets/ResizeObserver.global.js";
       import { useVideoWallpaperLoop } from "./hooks/useVideoWallpaperLoop.js";
+      import * as deviceApi from './apis/deviceApi.js';
       import webConfig from "./web.config.js";
       const { createApp, ref, onMounted, computed } = Vue;
       const { useOsTheme, darkTheme, lightTheme, createDiscreteApi } = naive;
@@ -194,6 +195,7 @@
           return {
             railStyle,
             videoWallpaperLoopHook,
+            deviceApi,
             theme: computed(() =>
               osThemeRef === "dark" ? darkTheme : lightTheme
             ),
